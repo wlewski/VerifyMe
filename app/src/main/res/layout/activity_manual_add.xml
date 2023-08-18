@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView
+        android:id="@+id/ManualAddPage_tvTitle"
+        android:text="@string/manual_add_title"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <EditText
+        android:id="@+id/ManualAddPage_etEnterLicenseNum"
+        android:singleLine="true"
+        android:background="@drawable/edit_text_default_background_border"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter License Number"
+        app:layout_constraintTop_toBottomOf="@+id/ManualAddPage_tvTitle"/>
+    <EditText
+        android:id="@+id/ManualAddPage_etEnterFirstName"
+        android:singleLine="true"
+        android:background="@drawable/edit_text_default_background_border"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter First Name"
+        app:layout_constraintTop_toBottomOf="@+id/ManualAddPage_etEnterLicenseNum"/>
+    <EditText
+        android:id="@+id/ManualAddPage_etEnterLastName"
+        android:singleLine="true"
+        android:background="@drawable/edit_text_default_background_border"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Last Name"
+        app:layout_constraintTop_toBottomOf="@+id/ManualAddPage_etEnterFirstName"/>
+    <EditText
+        android:id="@+id/ManualAddPage_etEnterDOB"
+        android:singleLine="true"
+        android:background="@drawable/edit_text_default_background_border"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Date of Birth - YYYY/MM/DD"
+        app:layout_constraintTop_toBottomOf="@+id/ManualAddPage_etEnterLastName"/>
+    <EditText
+        android:id="@+id/ManualAddPage_etEnterIss"
+        android:inputType="date"
+        android:singleLine="true"
+        android:background="@drawable/edit_text_default_background_border"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Date of Issue - YYYY/MM/DD"
+        app:layout_constraintTop_toBottomOf="@+id/ManualAddPage_etEnterDOB"/>
+    <EditText
+        android:id="@+id/ManualAddPage_etEnterExp"
+        android:inputType="date"
+        android:singleLine="true"
+        android:background="@drawable/edit_text_default_background_border"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Expiration Date - YYYY/MM/DD"
+        app:layout_constraintTop_toBottomOf="@+id/ManualAddPage_etEnterIss"/>
+    <Button
+        android:id="@+id/ManualAddPage_btnTakeFrontPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Front Image"
+        app:layout_constraintTop_toBottomOf="@id/ManualAddPage_etEnterExp"
+        app:layout_constraintEnd_toStartOf="@+id/ManualAddPage_btnTakeBackPic"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Button
+        android:id="@+id/ManualAddPage_btnTakeBackPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back Image"
+        app:layout_constraintTop_toBottomOf="@id/ManualAddPage_etEnterExp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ManualAddPage_btnTakeFrontPic" />
+    <!--<ImageView
+        android:id="@+id/ManualAddPage_ivLicenseImage"
+        android:layout_width="250dp"
+        android:layout_height="130dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/ManualAddPage_btnTakeBackPic"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>-->
+   <!-- <ImageView
+        android:id="@+id/img_manual_add_back_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/btn_manual_add_take_front_pic"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/img_manual_add_front_image"/>-->
+    <!--<TextView
+        android:id="@+id/tv_manual_add_front_pic"
+        android:text="Front Image"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_manual_add_exp"
+        app:layout_constraintEnd_toStartOf="@+id/btn_manual_add_take_back_pic"
+        app:layout_constraintStart_toStartOf="parent" />
+    <TextView
+        android:id="@+id/tv_manual_add_back_pic"
+        android:text="Back Image"
+        android:textSize="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/txt_manual_add_exp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_manual_add_take_front_pic"/>-->
+    <Button
+        android:id="@+id/ManualAddPage_btnSubmit"
+        android:text="@string/submit_button"
+        android:textSize="24dp"
+        android:layout_width="170dp"
+        android:layout_height="75dp"
+        app:layout_constraintRight_toLeftOf="@id/ManualAddPage_btnCancel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    <Button
+        android:id="@+id/ManualAddPage_btnCancel"
+        android:text="@string/cancel_button"
+        android:textSize="24dp"
+        android:layout_width="170dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/ManualAddPage_btnSubmit"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

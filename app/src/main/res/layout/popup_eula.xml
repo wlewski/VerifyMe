@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey">
+        <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <TextView
+            android:id="@+id/PopupEULA_tvTitle"
+            android:text="End User License Agreement"
+            android:textAlignment="center"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:layout_margin="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="10dp"
+            app:layout_constraintTop_toBottomOf="@id/PopupEULA_tvTitle"
+            app:layout_constraintBottom_toTopOf="@+id/PopupEULA_btnAccept"
+            android:background="@color/white">
+            <TextView
+                android:text="\t\t\tThis End-User License Agreement (&quot;Agreement&quot;) is a legal agreement between you (&quot;User&quot;) and GateKeeper Security (&quot;Company&quot;) regarding the use of the VerifyMe software (&quot;Software&quot;).
+                              \n\t\t\tLicense Grant: The Company grants the User a non-exclusive, non-transferable license to use the Software solely for the User's internal purposes, in accordance with the terms and conditions of this Agreement.
+                              \n\t\t\tIntellectual Property: The Software and any accompanying documentation are protected by intellectual property rights. The User acknowledges that all rights, title, and interest in the Software, including any intellectual property rights, remain with the Company.
+                              \n\t\t\tRestrictions: The User shall not: a. Copy, modify, distribute, sell, or lease the Software or any portion of it. b. Reverse engineer, decompile, or disassemble the Software, except to the extent expressly permitted by applicable law. c. Remove or alter any proprietary notices or labels on the Software.
+                              \n\t\t\tData Privacy: The Company may collect and process certain personal data in accordance with its Privacy Policy. By using the Software, the User consents to such data collection and processing.
+                              \n\nData Processing:
+                              \n\t\t\tPurpose and Scope:
+                              \n\t\t\ta. The purpose of this DPA is to outline the terms and conditions governing the processing of personal data by the Company on behalf of the Data Subject.
+                              \n\t\t\tb. This DPA applies to all personal data provided by the Data Subject to the Company for the purpose of accessing and using VerifyMe.
+                              \n\t\t\tDefinitions:
+                              \n\t\t\ta. &quot;Personal Data&quot; refers to any information relating to an identified or identifiable natural person, as defined by applicable data protection laws.
+                              \n\t\t\tb. &quot;Processing&quot; refers to any operation or set of operations performed on personal data, such as collection, recording, organization, storage, alteration, retrieval, consultation, use, disclosure, erasure, or destruction.
+                              \n\t\t\tData Controller and Data Processor:
+                              \n\t\t\ta. The Data Subject acts as the Data Controller, as defined by applicable data protection laws, and retains control over the personal data shared with the Company.
+                              \n\t\t\tb. The Company acts as the Data Processor, processing personal data on behalf of the Data Subject in accordance with the instructions provided by the Data Subject.
+                              \n\t\t\tData Processing Obligations:
+                              \n\t\t\ta. The Company shall process personal data solely for the purpose specified by the Data Subject and in accordance with applicable laws and regulations.
+                              \n\t\t\tb. The Company shall implement appropriate technical and organizational measures to protect personal data against unauthorized access, disclosure, alteration, or destruction.
+                              \n\t\t\tConfidentiality and Security:
+                              \n\t\t\ta. The Company shall ensure that its personnel involved in the processing of personal data are bound by confidentiality obligations.
+                              \n\t\t\tb. The Company shall implement and maintain reasonable security measures to protect personal data from unauthorized access, loss, or alteration.
+                              \n\t\t\tSubprocessing:
+                              \n\t\t\ta. The Company shall not engage sub-processors without the prior written consent of the Data Subject.
+                              \n\t\t\tb. If sub-processors are engaged, the Company shall ensure that they provide sufficient guarantees to implement appropriate technical and organizational measures to protect personal data.
+                              \n\t\t\tData Subject Rights:
+                              \n\t\t\ta. The Company shall assist the Data Subject in fulfilling their rights under applicable data protection laws, including the right to access, rectification, erasure, restriction of processing, and data portability.
+                              \n\t\t\tb. The Company shall promptly notify the Data Subject of any requests received directly from data subjects related to their personal data.
+                              \n\t\t\tData Retention and Deletion:
+                              \n\t\t\ta. The Company shall retain personal data only for as long as necessary to fulfill the purpose specified by the Data Subject or as required by law.
+                              \n\t\t\tb. Upon termination of the DPA or upon request from the Data Subject, the Company shall promptly delete or return all personal data processed on behalf of the Data Subject.
+                              \n\t\t\tInternational Data Transfers:
+                              \n\t\t\ta. The Company shall not transfer personal data to countries outside the European Economic Area (EEA) or any other territory without the explicit consent of the Data Subject.
+                              \n\t\t\tb. If international data transfers are necessary, the Company shall ensure appropriate safeguards are in place, such as the use of standard contractual clauses or other mechanisms recognized by applicable data protection laws.
+                              \n\t\t\tGoverning Law and Jurisdiction:
+                              \n\t\t\ta. This DPA shall be governed by and construed in accordance with the laws of the United States of America.
+                              \n\t\t\tb. Any disputes arising out of or in connection with this DPA shall be subject to the exclusive jurisdiction of the courts of United States of America.
+                              \n\n\t\t\tDisclaimer of Warranty: The Software is provided &quot;as is&quot; without warranty of any kind. The Company disclaims all warranties, whether express, implied, or statutory, including but not limited to the warranties of merchantability, fitness for a particular purpose, and non-infringement.
+                              \n\t\t\tLimitation of Liability: In no event shall the Company be liable for any indirect, incidental, special, consequential, or punitive damages arising out of or in connection with the use of the Software, even if advised of the possibility of such damages.
+                              \n\t\t\tGoverning Law and Jurisdiction: This Agreement shall be governed by and construed in accordance with the laws of the United States of America. Any disputes arising under or in connection with this Agreement shall be subject to the exclusive jurisdiction of the courts of the United States of America.
+                              \n\t\t\tTermination: The Company may terminate this Agreement at any time if the User violates any provisions of this Agreement. Upon termination, the User shall cease all use of the Software and delete any copies in their possession.
+                              \n\t\t\tEntire Agreement: This Agreement constitutes the entire agreement between the User and the Company, superseding any prior agreements or understandings, whether oral or written, relating to the Software."
+                android:textSize="16dp"
+                android:layout_margin="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        </ScrollView>
+        <Button
+            android:id="@+id/PopupEULA_btnAccept"
+            android:text="Accept"
+            android:textSize="20dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/PopupEULA_btnDeny"
+            app:layout_constraintBottom_toBottomOf="parent" />
+        <Button
+            android:id="@+id/PopupEULA_btnDeny"
+            android:text="Deny"
+            android:textSize="20dp"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/PopupEULA_btnAccept"  />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>

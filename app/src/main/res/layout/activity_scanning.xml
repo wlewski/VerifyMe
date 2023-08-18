@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <!-- Image of Camera view / Still picture after taken -->
+
+    <ImageView
+        android:id="@+id/Image_Preview_Pane"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:background="@color/black"
+        tools:layout_editor_absoluteY="0dp"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <!-- Buttons for flipping between images -->
+    <Button
+        android:id="@+id/Flip_Photo_Button_L"
+        android:layout_width="60dp"
+        android:layout_height="350dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        app:layout_constraintLeft_toLeftOf="@+id/Image_Preview_Pane"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/transparent"
+        android:text="Flip"/>
+
+    <Button
+        android:id="@+id/Flip_Photo_Button_R"
+        android:layout_width="60dp"
+        android:layout_height="350dp"
+        android:layout_alignParentTop="true"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/Image_Preview_Pane"
+        android:background="@android:color/transparent"
+        android:text="Flip" />
+
+    <TextView
+        android:id="@+id/DLN"
+        android:text="DLN \nH12345678"
+        android:textAlignment="center"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="120dp"
+        app:layout_constraintTop_toBottomOf="@+id/Image_Preview_Pane"
+        app:layout_constraintLeft_toLeftOf="@+id/Image_Preview_Pane"/>
+
+    <TextView
+        android:id="@+id/First_Name_Scanned"
+        android:text="First Name \nJoesoph"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/Image_Preview_Pane"
+        app:layout_constraintLeft_toLeftOf="@+id/Image_Preview_Pane"/>
+
+    <TextView
+        android:id="@+id/Middle_Name_Scanned"
+        android:text="Middle Name \nNonaSmith"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="390dp"
+        app:layout_constraintTop_toBottomOf="@+id/Image_Preview_Pane"
+        app:layout_constraintLeft_toLeftOf="@+id/Image_Preview_Pane"/>
+
+    <TextView
+        android:id="@+id/Last_Name_Scanned"
+        android:text="Last Name \nSmith"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="250dp"
+        android:layout_marginTop="390dp"
+        app:layout_constraintTop_toBottomOf="@+id/Image_Preview_Pane"
+        app:layout_constraintLeft_toLeftOf="@+id/Image_Preview_Pane"/>
+
+    <TextView
+        android:id="@+id/DOB_Scanned"
+        android:text="DOB \n08/05/1995"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="440dp"
+        app:layout_constraintTop_toBottomOf="@+id/Image_Preview_Pane"
+        app:layout_constraintLeft_toLeftOf="@+id/Image_Preview_Pane"/>
+
+    <TextView
+        android:id="@+id/Sex_Scanned"
+        android:text="Sex: \nM"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="440dp"
+        app:layout_constraintTop_toBottomOf="@+id/Image_Preview_Pane"
+        app:layout_constraintLeft_toLeftOf="@+id/Image_Preview_Pane"/>
+
+    <TextView
+        android:id="@+id/Hair_Color_Scanned"
+        android:text="Hair Color: \nBro"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="440dp"
+        app:layout_constraintTop_toBottomOf="@+id/Image_Preview_Pane"
+        app:layout_constraintLeft_toLeftOf="@+id/Image_Preview_Pane"/>
+
+    <TextView
+        android:id="@+id/Eye_Color_Scanned"
+        android:text="Eye Color: \nBlu"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="440dp"
+        app:layout_constraintTop_toBottomOf="@+id/Image_Preview_Pane"
+        app:layout_constraintLeft_toLeftOf="@+id/Image_Preview_Pane"/>
+
+    <TextView
+        android:id="@+id/Height_Scanned"
+        android:text="Height: \n6'-00''"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="490dp"
+        app:layout_constraintTop_toBottomOf="@+id/Image_Preview_Pane"
+        app:layout_constraintLeft_toLeftOf="@+id/Image_Preview_Pane"/>
+
+    <TextView
+        android:id="@+id/Weight_Scanned"
+        android:text="Weight: \n190 lb"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="150dp"
+        android:layout_marginTop="490dp"
+        app:layout_constraintTop_toBottomOf="@+id/Image_Preview_Pane"
+        app:layout_constraintLeft_toLeftOf="@+id/Image_Preview_Pane"/>
+
+    <TextView
+        android:id="@+id/Expiration_Scanned"
+        android:text="Expiration: \n05/06/2031"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="490dp"
+        app:layout_constraintTop_toBottomOf="@+id/Image_Preview_Pane"
+        app:layout_constraintLeft_toLeftOf="@+id/Image_Preview_Pane"/>
+
+    <Button
+        android:id="@+id/Accept_Button"
+        android:layout_width="110dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="565dp"
+        app:layout_constraintTop_toBottomOf="@+id/Image_Preview_Pane"
+        app:layout_constraintLeft_toLeftOf="@+id/Image_Preview_Pane"
+        android:text="Accept"/>
+
+    <Button
+        android:id="@+id/Retake_Button"
+        android:layout_width="110dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="565dp"
+        app:layout_constraintTop_toBottomOf="@+id/Image_Preview_Pane"
+        app:layout_constraintLeft_toLeftOf="@+id/Image_Preview_Pane"
+        android:text="Retake"/>
+
+    <Button
+        android:id="@+id/Reject_Button"
+        android:layout_width="110dp"
+        android:layout_height="90dp"
+        android:layout_marginLeft="280dp"
+        android:layout_marginTop="565dp"
+        app:layout_constraintTop_toBottomOf="@+id/Image_Preview_Pane"
+        app:layout_constraintLeft_toLeftOf="@+id/Image_Preview_Pane"
+        android:text="Reject"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

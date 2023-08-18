@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_incident_report">
+
+    <!--<TextView
+        android:id="@+id/ReportIncidentPage_tvTitle"
+        android:text="@string/report_incident_title"
+        android:textAlignment="center"
+        android:textSize="24dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        app:layout_constraintTop_toTopOf="parent"/>-->
+    <TextView
+        android:id="@+id/ReportIncidentPage_tvCustomerFullName"
+        android:text="Full Name - First, Last"
+        android:textSize="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <Spinner
+        android:id="@+id/ReportIncidentPage_spIncidents"
+        android:textAlignment="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/ReportIncidentPage_tvCustomerFullName"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+    <Spinner
+        android:id="@+id/ReportIncidentPage_spFlagLevel"
+        android:textAlignment="center"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/ReportIncidentPage_spIncidents"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:layout_editor_absoluteY="192dp" />
+    <EditText
+        android:id="@+id/ReportIncidentPage_etAdditionalInformation"
+        android:gravity="top"
+        android:inputType="textMultiLine"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="15dp"
+        android:singleLine="false"
+        android:hint="Additional Information"
+        app:layout_constraintTop_toBottomOf="@+id/ReportIncidentPage_spFlagLevel"
+        app:layout_constraintBottom_toTopOf="@+id/ReportIncidentPage_btnReportIncident"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/edit_incident_report_edit_text_border"/>
+
+
+    <Button
+        android:id="@+id/ReportIncidentPage_btnReportIncident"
+        android:text="@string/report_incident_button"
+        android:textSize="24dp"
+        android:layout_width="170dp"
+        android:layout_height="75dp"
+        app:layout_constraintRight_toLeftOf="@id/ReportIncidentPage_btnCancel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+    <Button
+        android:id="@+id/ReportIncidentPage_btnCancel"
+        android:text="@string/cancel_button"
+        android:textSize="24dp"
+        android:layout_width="170dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/ReportIncidentPage_btnReportIncident"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

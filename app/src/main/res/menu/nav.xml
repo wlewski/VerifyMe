@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--
+      - Navigation Menu
+        - Scan -> main activity
+          - Review Photo
+        - Manual Add
+        - Search Bar - Returns Results also
+          - Customer Information
+            - Report Incident
+        - Manage Account
+          -
+        - Logout
+    -->
+    <item
+        android:id="@+id/nav_scanning_page"
+        android:title="@string/scanning_page"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/nav_manual_add_page"
+        android:title="@string/manual_add_page"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/nav_search_bar_page"
+        android:title="@string/search_bar"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/nav_mangage_account_page"
+        android:title="@string/manage_account_page"
+        app:showAsAction="never"/>
+    <item
+        android:id="@+id/nav_logout"
+        android:title="@string/logout"
+        app:showAsAction="never"/>
+</menu>

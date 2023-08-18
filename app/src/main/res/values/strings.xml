@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">VerifyMe</string>
+
+    <!-- Shared Strings -->
+    <string name="cancel_button">Cancel</string>
+    <string name="submit_button">Submit</string>
+
+    <!-- Strings for Navigation - nav -->
+    <string name="scanning_page">Scan</string>
+    <string name="manual_add_page">Manual Add</string>
+    <string name="search_bar">Search Bar</string>
+    <string name="manage_account_page">Manage Account</string>
+    <string name="logout">Logout</string>
+
+    <!-- Strings for Report Incident Page - activity_incident_report -->
+    <string name="report_incident_title">Report Incident</string>
+
+    <!-- Strings for Customer Information Page - activity_customer_info_view -->
+    <string name="customer_info_title">Customer Info</string>
+    <string name="report_incident_button">Report Incident</string>
+
+    <!-- Strings for Search Page - activity_search -->
+    <string name="search_bar_title">Search</string>
+    <!-- Strings for Incident Report Page - activity_incident_report -->
+
+    <!-- Strings for Login Page - activity_login -->
+    <string name="login_title">Login</string>
+    <string name="login_username_input">Username</string>
+    <string name="login_password_input">Password</string>
+    <string name="login_stay_logged_in">Stayed Logged In</string>
+    <string name="login_login_button">Login</string>
+
+    <!-- Strings for Manual Add Page - activity_manual_add -->
+    <string name="manual_add_title">Manual Add</string>
+
+    <!-- Strings for User Management Page - activity_user_management_main -->
+    <string name="user_database_management">User Management</string>
+    <string name="customer_database_management">Customer Management</string>
+    <string name="analytics">Analytics</string>
+    <string name="application_settings">Application Settings</string>
+    <string name="return_to_scanning_page">Return to Scanning Application</string>
+
+
+</resources>
