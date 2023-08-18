@@ -1,2 +1,2 @@
-# SummerCapstone
-ID-Scanning
+# VerifyMe
+
